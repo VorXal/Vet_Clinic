@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Age__c</fullName>
+        <description>Age of animal</description>
+        <externalId>false</externalId>
+        <label>Age</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Animal_Owner__c</fullName>
+        <description>Account owner of animal</description>
+        <externalId>false</externalId>
+        <label>Animal Owner</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Animals</relationshipLabel>
+        <relationshipName>Animals</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Breed__c</fullName>
+        <description>Breed of animal</description>
+        <externalId>false</externalId>
+        <label>Breed</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Cat: Bengal</fullName>
+                    <default>false</default>
+                    <label>Cat: Bengal</label>
+                </value>
+                <value>
+                    <fullName>Cat: British</fullName>
+                    <default>false</default>
+                    <label>Cat: British</label>
+                </value>
+                <value>
+                    <fullName>Cat: Persian</fullName>
+                    <default>false</default>
+                    <label>Cat: Persian</label>
+                </value>
+                <value>
+                    <fullName>Cat: Siamese</fullName>
+                    <default>false</default>
+                    <label>Cat: Siamese</label>
+                </value>
+                <value>
+                    <fullName>Dog: American Bulldog</fullName>
+                    <default>false</default>
+                    <label>Dog: American Bulldog</label>
+                </value>
+                <value>
+                    <fullName>Dog: American Staffordshire Terrier</fullName>
+                    <default>false</default>
+                    <label>Dog: American Staffordshire Terrier</label>
+                </value>
+                <value>
+                    <fullName>Dog: Beagle</fullName>
+                    <default>false</default>
+                    <label>Dog: Beagle</label>
+                </value>
+                <value>
+                    <fullName>Dog: Pug</fullName>
+                    <default>false</default>
+                    <label>Dog: Pug</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Cat</controllingFieldValue>
+                <valueName>Cat: Bengal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cat</controllingFieldValue>
+                <valueName>Cat: British</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cat</controllingFieldValue>
+                <valueName>Cat: Persian</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cat</controllingFieldValue>
+                <valueName>Cat: Siamese</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dog</controllingFieldValue>
+                <valueName>Dog: American Bulldog</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dog</controllingFieldValue>
+                <valueName>Dog: American Staffordshire Terrier</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dog</controllingFieldValue>
+                <valueName>Dog: Beagle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dog</controllingFieldValue>
+                <valueName>Dog: Pug</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Health_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <label>Health Indicator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>9</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>10</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Image_URL__c</fullName>
+        <description>Link to image of animal</description>
+        <externalId>false</externalId>
+        <label>Image URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Image__c</fullName>
+        <description>Image of animal</description>
+        <externalId>false</externalId>
+        <formula>IMAGE( Image_URL__c , &apos;Image of animal&apos;, 300, 300)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Image</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <defaultValue>1</defaultValue>
+        <description>Rating of animal</description>
+        <externalId>false</externalId>
+        <label>Rating</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>Type of animal</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Weight__c</fullName>
+        <description>Weight of animal</description>
+        <externalId>false</externalId>
+        <label>Weight</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Animal</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Cats</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Cat</value>
+        </filters>
+        <label>Cats</label>
+    </listViews>
+    <listViews>
+        <fullName>Dogs</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Dog</value>
+        </filters>
+        <label>Dogs</label>
+    </listViews>
+    <nameField>
+        <label>Animal Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Animals</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Age_can_not_be_less_zero</fullName>
+        <active>true</active>
+        <description>Age can not be less zero</description>
+        <errorConditionFormula>Age__c &lt; 0</errorConditionFormula>
+        <errorDisplayField>Age__c</errorDisplayField>
+        <errorMessage>Age can not be less zero</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Weight_can_not_be_less_zero</fullName>
+        <active>true</active>
+        <description>Weight can not be less zero</description>
+        <errorConditionFormula>Weight__c &lt; 0</errorConditionFormula>
+        <errorDisplayField>Weight__c</errorDisplayField>
+        <errorMessage>Weight can not be less zero</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

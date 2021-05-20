@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cat</fullName>
+        <default>false</default>
+        <label>Cat</label>
+    </customValue>
+    <customValue>
+        <fullName>Dog</fullName>
+        <default>false</default>
+        <label>Dog</label>
+    </customValue>
+    <description>Type of animal</description>
+    <masterLabel>Type</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

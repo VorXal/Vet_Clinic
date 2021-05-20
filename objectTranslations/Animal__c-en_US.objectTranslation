@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Animal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Animals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Animal Owner --></label>
+        <name>Animal_Owner__c</name>
+        <relationshipLabel><!-- Animals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Breed --></label>
+        <name>Breed__c</name>
+        <picklistValues>
+            <masterLabel>Cat: Bengal</masterLabel>
+            <translation><!-- Cat: Bengal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat: British</masterLabel>
+            <translation><!-- Cat: British --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat: Persian</masterLabel>
+            <translation><!-- Cat: Persian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat: Siamese</masterLabel>
+            <translation><!-- Cat: Siamese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dog: American Bulldog</masterLabel>
+            <translation><!-- Dog: American Bulldog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dog: American Staffordshire Terrier</masterLabel>
+            <translation><!-- Dog: American Staffordshire Terrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dog: Beagle</masterLabel>
+            <translation><!-- Dog: Beagle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dog: Pug</masterLabel>
+            <translation><!-- Dog: Pug --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Health Indicator --></label>
+        <name>Health_Indicator__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Image URL --></label>
+        <name>Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image --></label>
+        <name>Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating --></label>
+        <name>Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>Weight__c</name>
+    </fields>
+    <layouts>
+        <layout>Animal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Animal Page Admin</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Animal Page Employee</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Vote for this animal --></label>
+        <name>Vote_for_this_animal</name>
+    </quickActions>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Age can not be less zero --></errorMessage>
+        <name>Age_can_not_be_less_zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Weight can not be less zero --></errorMessage>
+        <name>Weight_can_not_be_less_zero</name>
+    </validationRules>
+</CustomObjectTranslation>
