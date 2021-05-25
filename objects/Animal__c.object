@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Animal_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -352,6 +355,15 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Pregnant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checks if the animal is pregnant?</description>
+        <externalId>false</externalId>
+        <label>Pregnant</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Rating__c</fullName>
         <defaultValue>1</defaultValue>
         <description>Rating of animal</description>
@@ -376,6 +388,16 @@
             <restricted>true</restricted>
             <valueSetName>Type</valueSetName>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vitamins__c</fullName>
+        <externalId>false</externalId>
+        <label>Vitamins</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Weight__c</fullName>

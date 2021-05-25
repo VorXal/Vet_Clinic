@@ -106,12 +106,20 @@
         <name>Image__c</name>
     </fields>
     <fields>
+        <label><!-- Pregnant --></label>
+        <name>Pregnant__c</name>
+    </fields>
+    <fields>
         <label><!-- Rating --></label>
         <name>Rating__c</name>
     </fields>
     <fields>
         <label><!-- Type --></label>
         <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vitamins --></label>
+        <name>Vitamins__c</name>
     </fields>
     <fields>
         <label><!-- Weight --></label>
