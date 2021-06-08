@@ -20,7 +20,29 @@
         </lightning-button>
     </template>
     <template if:false={selectingParameters}>
-        <lightning-record-form object-api-name="Animal__c" columns="2"
-                                fields={arrayFields}></lightning-record-form>
+        <!-- <lightning-record-form object-api-name="Animal__c" columns="2"
+                                fields={arrayFields}>
+            
+        </lightning-record-form> -->
+
+        <lightning-record-edit-form object-api-name="Animal__c">
+            <lightning-input-field field-name="Name" value={name}></lightning-input-field>
+            <lightning-input-field field-name="Type__c" value={type}></lightning-input-field>
+            <lightning-input-field field-name="Breed__c" value={breed}></lightning-input-field>
+            <lightning-input-field field-name="Rating__c" value={rating}></lightning-input-field>
+            <lightning-input-field field-name="Image_URL__c" value={image_url}></lightning-input-field>
+            <lightning-input-field field-name="Weight__c" value={weight}></lightning-input-field>
+            <lightning-input-field field-name="Age__c" value={age}></lightning-input-field>
+            <lightning-input-field field-name="Animal_Owner__c" value={animal_owner}></lightning-input-field>
+            <lightning-input-field field-name="Health_Indicator__c" value={health_indicator}></lightning-input-field>
+            <lightning-input-field field-name="Pregnant__c" value={pregnant}></lightning-input-field>
+            <lightning-input-field field-name="Vitamins__c" value={vitamins}></lightning-input-field>
+
+            <lightning-button class="slds-m-top_small"
+                              type="submit"
+                              label="Create new"
+                              onclick={closeQuickAction}>
+            </lightning-button>
+        </lightning-record-edit-form>
     </template>
 </template>
