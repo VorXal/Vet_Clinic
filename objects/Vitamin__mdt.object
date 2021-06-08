@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>isPregnant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>isPregnant</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Vitamin</label>
+    <pluralLabel>Vitamins</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

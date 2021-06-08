@@ -1,0 +1,26 @@
+<template>
+    <template if:true={selectingParameters}>
+        Select parameters:
+
+        <template for:each={settingsForClone} for:item="field">
+            <div key={field.Id} class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <div class="slds-checkbox">
+                        <input type="checkbox" class="for-query" name="options" id={field.Id} />
+                        <label class="slds-checkbox__label" for={field.Id}>
+                            <span class="slds-checkbox_faux"></span>
+                            <span class="slds-form-element__label">{field.Name}</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <lightning-button class="slds-m-left_x-small" label="Confirm parameters" onclick={handleConfirm}>
+        </lightning-button>
+    </template>
+    <template if:false={selectingParameters}>
+        <lightning-record-form object-api-name="Animal__c" columns="2"
+                                fields={arrayFields}></lightning-record-form>
+    </template>
+</template>

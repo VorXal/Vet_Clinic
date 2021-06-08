@@ -181,12 +181,20 @@
     <tabs>standard-Lead</tabs>
     <tabs>Food__c</tabs>
     <tabs>Animal__c</tabs>
+    <tabs>Child_object__c</tabs>
+    <tabs>Parent_object__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Animal__c</tab>
         </mappings>
         <mappings>
+            <tab>Child_object__c</tab>
+        </mappings>
+        <mappings>
             <tab>Food__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Parent_object__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>

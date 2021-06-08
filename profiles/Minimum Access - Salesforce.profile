@@ -106,6 +106,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AnimalController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>AnimalTriggerHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -2164,6 +2168,16 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Parent_object__c.Copy_field__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Parent_object__c.Not_copy_field__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>PartyConsent.DoubleConsentCaptureDate</field>
         <readable>false</readable>
@@ -2396,6 +2410,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Task.WhoId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Vitamin__mdt.isPregnant__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2684,6 +2703,14 @@
         <readable>true</readable>
     </fieldPermissions>
     <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Clone_parent</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Copy_Parent_with_Related</flow>
+    </flowAccesses>
+    <flowAccesses>
         <enabled>true</enabled>
         <flow>Increment_rating</flow>
     </flowAccesses>
@@ -2739,6 +2766,9 @@
         <layout>CaseMilestone-Case Milestone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Child_object__c-Child object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ContactPointTypeConsent-Contact Point Type Consent Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2778,6 +2808,9 @@
         <layout>LegalEntity-Legal Entity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Parent_object__c-Parent object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Payment-Payment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2815,6 +2848,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ThreatDetectionFeedback-Threat Detection Feedback Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Vitamin__mdt-Vitamin Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkOrder-Work Order Layout</layout>
@@ -2867,6 +2903,10 @@
         <object>ServiceContract</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <pageAccesses>
+        <apexPage>PregnantAnimalPage</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
@@ -2887,7 +2927,15 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Child_object__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Food__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Parent_object__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

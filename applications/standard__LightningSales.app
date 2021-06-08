@@ -25,5 +25,7 @@
     <tabs>standard-Forecasting3</tabs>
     <tabs>Food__c</tabs>
     <tabs>Animal__c</tabs>
+    <tabs>Child_object__c</tabs>
+    <tabs>Parent_object__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

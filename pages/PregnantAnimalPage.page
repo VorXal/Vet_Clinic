@@ -1,0 +1,70 @@
+<apex:page controller="AnimalController">
+
+	<apex:form >
+        Is animal Pregnant?
+    	<apex:inputCheckbox value="{!pregnantStatus}" >
+            <apex:actionSupport event="onchange" action="{!changeStatus}" reRender="block">
+            </apex:actionSupport>
+        </apex:inputCheckbox>
+    </apex:form>
+    
+    <apex:pageBlock id="block">
+    	<apex:pageBlockSection id="section" columns="1">
+        	<apex:repeat value="{!vitamins }" var="vt" >
+            	<apex:pageBlockSectionItem >
+        			<apex:form styleClass="form">
+                        <apex:commandButton onclick="vitaminAction()" value="Add/Remove" reRender="false" />
+            		</apex:form>
+            		<apex:outputText value="{!vt.MasterLabel}"/>
+            	</apex:pageBlockSectionItem>
+        	</apex:repeat>
+            <apex:outputText id="result" value=" "></apex:outputText>
+            
+            <apex:form styleClass="form">
+                  <apex:commandButton onclick="save()" value="Save Vitamina"/>
+            </apex:form>
+    	</apex:pageBlockSection>
+        
+        <apex:form >
+        	<apex:actionFunction name="sendData" action="{!getDataFromJS}" rerender="true">
+            	<apex:param name="vitamin" value="" />
+        	</apex:actionFunction>
+    	</apex:form>
+    </apex:pageBlock>
+    
+    <style>
+    	.form{
+        	display: inline-block;
+        }
+    </style>
+    
+    <script type="text/javascript">
+    
+    	function vitaminAction(){
+            const field = document.getElementById('{!$Component.block.section.result}');
+            let vitamin = event.path[3].lastChild.innerText;
+            
+            if(field.innerText.includes(vitamin)){
+                let index = field.innerText.indexOf(vitamin);
+                let length = vitamin.length;
+                if(field.innerText[index + length] == ","){
+                	field.innerText = field.innerText.replace(vitamin + ",", ""); 
+                } else {
+                 	field.innerText = field.innerText.replace(vitamin, ""); 
+                }
+            } else {
+                if(field.innerText.length == 0){
+                	field.innerText += vitamin;
+                } else {
+                	field.innerText += ", " + vitamin;
+                }
+            }
+        }  
+    
+    	function save(){
+            const field = document.getElementById('{!$Component.block.section.result}');
+            sendData(field.innerText);
+        }
+    	
+    </script>
+</apex:page>

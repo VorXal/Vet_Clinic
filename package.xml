@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>AnimalController</members>
         <members>AnimalTriggerHandler</members>
         <members>AnimalTriggerHandlerHelper</members>
         <members>FoodTriggerHandler</members>
@@ -10,6 +11,10 @@
         <members>trlhdtips__tt_UtilController</members>
         <members>trlhdtips__tt_UtilControllerTest</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>PregnantAnimalPage</members>
+        <name>ApexPage</name>
     </types>
     <types>
         <members>AnimalTrigger</members>
@@ -33,6 +38,7 @@
         <name>AssignmentRules</name>
     </types>
     <types>
+        <members>selectorParameters</members>
         <members>trlhdtips__tt_install_package_cmp</members>
         <members>trlhdtips__tt_login_cred_cmp</members>
         <members>trlhdtips__tt_remove_padding_cmp</members>
@@ -90,19 +96,23 @@
         <members>Account.SLASerialNumber__c</members>
         <members>Account.SLA__c</members>
         <members>Account.UpsellOpportunity__c</members>
+        <members>Animal_Settings__c.API_Name__c</members>
         <members>Animal__c.Age__c</members>
         <members>Animal__c.Animal_Owner__c</members>
         <members>Animal__c.Breed__c</members>
         <members>Animal__c.Health_Indicator__c</members>
         <members>Animal__c.Image_URL__c</members>
         <members>Animal__c.Image__c</members>
+        <members>Animal__c.Pregnant__c</members>
         <members>Animal__c.Rating__c</members>
         <members>Animal__c.Type__c</members>
+        <members>Animal__c.Vitamins__c</members>
         <members>Animal__c.Weight__c</members>
         <members>Case.EngineeringReqNumber__c</members>
         <members>Case.PotentialLiability__c</members>
         <members>Case.Product__c</members>
         <members>Case.SLAViolation__c</members>
+        <members>Child_object__c.Parent_object__c</members>
         <members>Contact.Languages__c</members>
         <members>Contact.Level__c</members>
         <members>Food__c.Amount__c</members>
@@ -120,12 +130,15 @@
         <members>Opportunity.MainCompetitors__c</members>
         <members>Opportunity.OrderNumber__c</members>
         <members>Opportunity.TrackingNumber__c</members>
+        <members>Parent_object__c.Copy_field__c</members>
+        <members>Parent_object__c.Not_copy_field__c</members>
         <members>Product2.Carbohydrates__c</members>
         <members>Product2.Energy_value__c</members>
         <members>Product2.Fats__c</members>
         <members>Product2.Feed_Detail__c</members>
         <members>Product2.Price__c</members>
         <members>Product2.Proteins__c</members>
+        <members>Vitamin__mdt.isPregnant__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -143,12 +156,21 @@
         <name>CustomLabels</name>
     </types>
     <types>
+        <members>Vitamin.Vitamine_A</members>
+        <members>Vitamin.Vitamine_B</members>
+        <members>Vitamin.Vitamine_C</members>
+        <members>Vitamin.Vitamine_D</members>
+        <members>Vitamin.Vitamine_E</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
         <members>Account</members>
         <members>AccountCleanInfo</members>
         <members>AccountContactRole</members>
         <members>Activity</members>
         <members>ActivityRecurrence2Exception</members>
         <members>AlternativePaymentMethod</members>
+        <members>Animal_Settings__c</members>
         <members>Animal__c</members>
         <members>ApiAnomalyEventStore</members>
         <members>Asset</members>
@@ -171,6 +193,7 @@
         <members>CaseContactRole</members>
         <members>CaseMilestone</members>
         <members>ChatterActivity</members>
+        <members>Child_object__c</members>
         <members>CollaborationGroup</members>
         <members>CollaborationGroupMember</members>
         <members>CommSubscription</members>
@@ -235,6 +258,7 @@
         <members>OrgDeleteRequest</members>
         <members>OrgMetricScanResult</members>
         <members>OrgMetricScanSummary</members>
+        <members>Parent_object__c</members>
         <members>PartnerRole</members>
         <members>PartyConsent</members>
         <members>Payment</members>
@@ -272,6 +296,7 @@
         <members>TopicAssignment</members>
         <members>User</members>
         <members>UserProvisioningRequest</members>
+        <members>Vitamin__mdt</members>
         <members>WorkBadge</members>
         <members>WorkBadgeDefinition</members>
         <members>WorkOrder</members>
@@ -280,13 +305,19 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Animal_Settings__c-en_US</members>
         <members>Animal__c-en_US</members>
+        <members>Child_object__c-en_US</members>
         <members>Food__c-en_US</members>
+        <members>Parent_object__c-en_US</members>
+        <members>Vitamin__mdt-en_US</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
         <members>Animal__c</members>
+        <members>Child_object__c</members>
         <members>Food__c</members>
+        <members>Parent_object__c</members>
         <members>trlhdtips__Get_Your_Login_Credentials</members>
         <members>trlhdtips__Install_a_Package</members>
         <members>trlhdtips__Welcome</members>
@@ -330,13 +361,22 @@
         <name>EscalationRules</name>
     </types>
     <types>
+        <members>Parent_object__c.Set_for_clone</members>
+        <name>FieldSet</name>
+    </types>
+    <types>
+        <members>Animal_Record_Page</members>
+        <members>Animal_Record_Page1</members>
         <members>LightningSalesConsole_UtilityBar</members>
         <members>LightningService_UtilityBar</members>
+        <members>Parent_object_Record_Page</members>
         <members>Vet_Clinic_App_UtilityBar</members>
         <members>trlhdtips__Trailhead_Tips_UtilityBar</members>
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>Clone_parent</members>
+        <members>Copy_Parent_with_Related</members>
         <members>Increment_rating</members>
         <members>Veterinarian_check</members>
         <members>customer_satisfaction</members>
@@ -344,6 +384,8 @@
         <name>Flow</name>
     </types>
     <types>
+        <members>Clone_parent</members>
+        <members>Copy_Parent_with_Related</members>
         <members>Increment_rating</members>
         <members>Veterinarian_check</members>
         <members>customer_satisfaction</members>
@@ -407,6 +449,7 @@
         <members>Case-Case Layout</members>
         <members>CaseClose-Close Case Layout</members>
         <members>CaseMilestone-Case Milestone Layout</members>
+        <members>Child_object__c-Child object Layout</members>
         <members>CommunityMemberLayout-Community Member Layout</members>
         <members>ConsumptionRate-Consumption Rate Layout</members>
         <members>ConsumptionSchedule-Consumption Schedule Layout</members>
@@ -451,6 +494,7 @@
         <members>OpportunityLineItem-Opportunity Product Layout</members>
         <members>Order-Order Layout</members>
         <members>OrderItem-Order Product Layout</members>
+        <members>Parent_object__c-Parent object Layout</members>
         <members>Payment-Payment Layout</members>
         <members>PaymentAuthAdjustment-Payment Authorization Adjustment Layout</members>
         <members>PaymentAuthorization-Payment Authorization Layout</members>
@@ -480,6 +524,7 @@
         <members>UserProvAccount-User Provisioning Account Layout</members>
         <members>UserProvisioningLog-User Provisioning Log Layout</members>
         <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+        <members>Vitamin__mdt-Vitamin Layout</members>
         <members>WorkAccess-Access Layout</members>
         <members>WorkBadge-Badge Received Layout</members>
         <members>WorkBadgeDefinition-Badge Layout</members>
@@ -487,6 +532,10 @@
         <members>WorkOrderLineItem-Work Order Line Item Layout</members>
         <members>WorkThanks-Thanks Layout</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>selectorParametersForClone</members>
+        <name>LightningComponentBundle</name>
     </types>
     <types>
         <members>Account.AllAccounts</members>
@@ -520,6 +569,7 @@
         <members>Case.AllOpenCases</members>
         <members>Case.MyCases</members>
         <members>Case.MyOpenCases</members>
+        <members>Child_object__c.All</members>
         <members>CollaborationGroup.All_ChatterGroups</members>
         <members>CommSubscription.All_CommSubscriptions</members>
         <members>CommSubscriptionChannelType.All_CommSubscriptionChannelTypes</members>
@@ -574,6 +624,7 @@
         <members>Order.AllActivatedOrders</members>
         <members>Order.AllDraftOrders</members>
         <members>Order.AllOrders</members>
+        <members>Parent_object__c.All</members>
         <members>PartyConsent.All_PartyConsents</members>
         <members>Payment.Payment</members>
         <members>PaymentAuthAdjustment.PaymentAuthAdjustment</members>
@@ -683,6 +734,7 @@
         <name>ProfileSessionSetting</name>
     </types>
     <types>
+        <members>Animal__c.Clone</members>
         <members>Animal__c.Vote_for_this_animal</members>
         <members>Case.LogACall</members>
         <members>Case.NewChildCase</members>
@@ -699,6 +751,8 @@
         <members>NewNote</members>
         <members>NewOpportunity</members>
         <members>NewTask</members>
+        <members>Parent_object__c.Clone</members>
+        <members>Parent_object__c.Clone_with_items</members>
         <members>SendEmail</members>
         <members>Task.Defer</members>
         <members>Task.Defer_0</members>
@@ -810,6 +864,7 @@
         <members>Opportunity</members>
         <members>Order</members>
         <members>OrgDeleteRequest</members>
+        <members>Parent_object__c</members>
         <members>PartyConsent</members>
         <members>ProcessException</members>
         <members>Product2</members>
@@ -844,6 +899,7 @@
         <members>Asset</members>
         <members>Campaign</members>
         <members>Case</members>
+        <members>Child_object__c</members>
         <members>Contact</members>
         <members>ContentDocument</members>
         <members>Contract</members>
@@ -852,6 +908,7 @@
         <members>Lead</members>
         <members>Opportunity</members>
         <members>Order</members>
+        <members>Parent_object__c</members>
         <members>Solution</members>
         <members>Task</members>
         <members>WorkOrder</members>

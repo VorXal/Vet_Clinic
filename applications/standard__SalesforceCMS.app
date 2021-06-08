@@ -11,13 +11,21 @@
     <tabs>standard-CmsExperiences</tabs>
     <tabs>Food__c</tabs>
     <tabs>Animal__c</tabs>
+    <tabs>Child_object__c</tabs>
+    <tabs>Parent_object__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
             <tab>Animal__c</tab>
         </mappings>
         <mappings>
+            <tab>Child_object__c</tab>
+        </mappings>
+        <mappings>
             <tab>Food__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Parent_object__c</tab>
         </mappings>
         <mappings>
             <tab>standard-CmsAuthorHome</tab>

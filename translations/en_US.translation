@@ -52,6 +52,64 @@
         <flows>
             <screens>
                 <fields>
+                    <name>Is_CopyField_Clone</name>
+                </fields>
+                <fields>
+                    <name>Is_Name_Clone</name>
+                </fields>
+                <fields>
+                    <name>Is_NotCopyField_Clone</name>
+                </fields>
+                <name>Choose_parameters_for_clone</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>CopyField</name>
+                </fields>
+                <fields>
+                    <name>Name</name>
+                </fields>
+                <fields>
+                    <name>Not_copy_field</name>
+                </fields>
+                <name>Create_Record</name>
+            </screens>
+        </flows>
+        <fullName>Clone_parent</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Is_CopyField_Clone</name>
+                </fields>
+                <fields>
+                    <name>Is_Name_Clone</name>
+                </fields>
+                <fields>
+                    <name>Is_NotCopyField_Clone</name>
+                </fields>
+                <name>Choose_fields</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>CopyField</name>
+                </fields>
+                <fields>
+                    <name>Name</name>
+                </fields>
+                <fields>
+                    <name>Not_copy_field</name>
+                </fields>
+                <name>Create_Record</name>
+            </screens>
+        </flows>
+        <fullName>Copy_Parent_with_Related</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
                     <name>Message</name>
                 </fields>
                 <name>Success_screen</name>

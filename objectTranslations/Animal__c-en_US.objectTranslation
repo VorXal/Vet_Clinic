@@ -147,6 +147,10 @@
         </sections>
     </layouts>
     <quickActions>
+        <label><!-- Clone --></label>
+        <name>Clone</name>
+    </quickActions>
+    <quickActions>
         <label><!-- Vote for this animal --></label>
         <name>Vote_for_this_animal</name>
     </quickActions>

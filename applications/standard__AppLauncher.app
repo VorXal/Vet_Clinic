@@ -7,4 +7,6 @@
     <tabs>standard-AppLauncher</tabs>
     <tabs>Food__c</tabs>
     <tabs>Animal__c</tabs>
+    <tabs>Child_object__c</tabs>
+    <tabs>Parent_object__c</tabs>
 </CustomApplication>
